@@ -1,0 +1,16 @@
+/* Home specific styles */
+.institutional-text { max-width: 800px; margin: 0 auto 40px; padding: 30px; background: white; border-radius: 15px; box-shadow: 0 5px 20px rgba(0, 51, 160, 0.1); border-left: 5px solid #0033A0; }
+.institutional-text p { font-size: 1.1rem; line-height: 1.6; color: #333; margin: 0; }
+.institutional-text strong { color: #0033A0; font-weight: 600; }
+.access-section { margin-bottom: 50px; }
+.access-button { display: inline-flex; align-items: center; gap: 12px; background: linear-gradient(135deg, #0033A0 0%, #002B7F 100%); color: white; text-decoration: none; padding: 18px 35px; border-radius: 15px; font-size: 1.1rem; font-weight: 600; box-shadow: 0 8px 25px rgba(0, 51, 160, 0.3); transition: all 0.3s ease; }
+.access-button:hover { background: linear-gradient(135deg, #002B7F 0%, #001F5C 100%); transform: translateY(-3px); box-shadow: 0 12px 35px rgba(0, 51, 160, 0.4); }
+.button-icon { font-size: 1.3rem; }
+.info-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; margin-top: 40px; }
+.info-card { background: white; padding: 30px 25px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0, 51, 160, 0.1); transition: all 0.25s ease; border-top: 4px solid #0033A0; }
+.info-card:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0, 51, 160, 0.15); }
+.card-icon { font-size: 2.5rem; margin-bottom: 15px; }
+.info-card h3 { font-size: 1.3rem; font-weight: 600; color: #0033A0; margin-bottom: 12px; }
+.info-card p { color: #666; line-height: 1.5; margin: 0; }
+
+

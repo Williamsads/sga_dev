@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAS - Sistem ade Atendimento ao Servidor</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cabeçalho fixo -->
+    <header class="header">
+        <div class="header-container">
+            <!-- Lado esquerdo - Logo e nome do sistema -->
+            <div class="header-left">
+                <div class="logo-section">
+                    <img src="Ícones/ses-pe-secretaria-de-saude-do-estado-de-pernambuco.png" alt="Logo SES-PE" class="header-logo">
+                    <div class="system-info">
+                        <h1 class="system-name">SAS</h1>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Centro - Menu de navegação -->
+            <nav class="header-center">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="agendamento.html" class="nav-link">
+                            <span class="nav-icon">📅️</span>
+                            <span class="nav-text">Agendamento</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="atendimento.html" class="nav-link">
+                            <span class="nav-icon">💬</span>
+                            <span class="nav-text">Atendimento</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="configuracoes.html" class="nav-link">
+                            <span class="nav-icon">⚙️</span>
+                            <span class="nav-text">Configurações</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="monitor.html" class="nav-link">
+                            <span class="nav-icon">🖥️</span>
+                            <span class="nav-text">Monitor</span>
+                        </a>
+                    </li>
+                    <li class="nav-item relatorios">
+                        <a href="relatorios.html" class="nav-link">
+                            <span class="nav-icon">📊</span>
+                            <span class="nav-text">Relatórios</span>
+                        </a>
+                        <!-- Dropdown de Relatórios -->
+                        <div class="relatorios-dropdown">
+                            <a href="relatorios-servicos-global.html" class="relatorios-dropdown-item"><span class="icon">📄</span><span>Serviços disponíveis – Global</span></a>
+                            <a href="relatorios-servicos-unidade.html" class="relatorios-dropdown-item"><span class="icon">🏢</span><span>Serviços disponíveis – Unidade</span></a>
+                            <a href="relatorios-servicos-executados.html" class="relatorios-dropdown-item"><span class="icon">✅</span><span>Serviços executados</span></a>
+                            <a href="relatorios-atendimentos-concluidos.html" class="relatorios-dropdown-item"><span class="icon">✔️</span><span>Atendimentos concluídos</span></a>
+                            <a href="relatorios-status.html" class="relatorios-dropdown-item"><span class="icon">📋</span><span>Atendimentos em todos os status</span></a>
+                            <a href="relatorios-tempos-atendente.html" class="relatorios-dropdown-item"><span class="icon">⏱️</span><span>Tempos médios por atendente</span></a>
+                            <a href="relatorios-lotacoes-perfis.html" class="relatorios-dropdown-item"><span class="icon">👥</span><span>Lotações e Perfis</span></a>
+                            <a href="graficos.html" class="relatorios-dropdown-item graph-item"><span class="icon">📈</span><span>Gráfico</span></a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="triagem.html" class="nav-link">
+                            <span class="nav-icon">🧾</span>
+                            <span class="nav-text">Triagem</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="usuarios.html" class="nav-link">
+                            <span class="nav-icon">👥</span>
+                            <span class="nav-text">Usuários</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Lado direito - Usuário -->
+            <div class="header-right">
+                <div class="user-section">
+                    <div class="user-info" id="userInfo">
+                        <div class="user-avatar">👤</div>
+                        <div class="user-details">
+                            <span class="user-name" id="userName">Carregando...</span>
+                            <span class="user-role" id="userRole">Guichê 1</span>
+                        </div>
+                    </div>
+                    <div class="user-dropdown" id="userDropdown">
+                        <ul class="dropdown-menu">
+                            <li><a href="#" id="changeUser">Trocar Usuário</a></li>
+                            <li><a href="#" id="logout">Sair</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Corpo principal -->
+    <main class="main-content">
+        <div class="content-container">
+            <!-- Saudação personalizada -->
+            <div class="welcome-section">
+                <h2 class="welcome-title" id="welcomeTitle">Bem-vindo, Usuário</h2>
+                <div class="welcome-divider"></div>
+            </div>
+
+            <!-- Texto institucional -->
+            <div class="institutional-text">
+                <p>
+                    Seja bem-vindo ao novo <strong>SAS - Sistem ade Atendimento ao Servidor</strong>. 
+                    Desenvolvido para modernizar, integrar e facilitar o acesso aos serviços, o SAS garante 
+                    mais agilidade, transparência e eficiência no atendimento aos servidores e cidadãos.
+                </p>
+            </div>
+
+            <!-- Botão de acesso -->
+            <div class="access-section">
+                <a href="agendamento.html" class="access-button">
+                    <span class="button-icon">🚀</span>
+                    <span class="button-text">Acessar Sistema</span>
+                </a>
+            </div>
+
+            <!-- Cards informativos -->
+            <div class="info-cards">
+                <div class="info-card">
+                    <div class="card-icon">⚡</div>
+                    <h3>Agilidade</h3>
+                    <p>Processos mais rápidos e eficientes para melhor atendimento</p>
+                </div>
+                <div class="info-card">
+                    <div class="card-icon">🔒</div>
+                    <h3>Segurança</h3>
+                    <p>Dados protegidos com as melhores práticas de segurança</p>
+                </div>
+                <div class="info-card">
+                    <div class="card-icon">📈</div>
+                    <h3>Transparência</h3>
+                    <p>Controle total sobre processos e relatórios detalhados</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>SAS - Sistem ade Atendimento ao Servidor | Governo de Pernambuco — 2025</p>
+        </div>
+    </footer>
+
+    <script type="module" src="js/global.js"></script>
+    <script type="module" src="js/home.js"></script>
+</body>
+</html>
